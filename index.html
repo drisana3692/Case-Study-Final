@@ -1,0 +1,233 @@
+<html><head>
+    <title> Case Study: Google Lens VS MobileNet Model </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script><style type="text/css" data-glamor=""></style>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <center>
+        <h4> Case Study - Google Lens VS MobileNet Model </h4>
+        <span id = "hello"> Google Lens  <img src="https://www.bing.com/th?id=Ad4c93f2425bde88c5133a1081ee67f19&amp;w=110&amp;h=110&amp;c=7&amp;rs=1&amp;qlt=80&amp;o=6&amp;dpr=1.5&amp;pid=SANGAM"></span>
+        <span id = "why"> - VS - </span>
+        <span class="btn btn-primary" id="mobilenet"> MobileNet Model</span>
+        <hr>
+            <ol id = "ol">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+          <div class="number1 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -   
+                  </b>
+              <img class="img" src="binderclip.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>Google Lens</b> - Floral Binder Clips
+              <span> </span>
+            </h5>
+            <h5 class="answer col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - Microphone, Mike
+              <span> </span>
+            </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+          <div class="number2 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -     </b>
+              <img class="img" src="marker.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - Tropical Violet Crayola Marker
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Vacuum, Vacuum Cleaner
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+          <div class="number3 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -      </b>
+              <img class="img" src="mouse.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - Logitech MX Anywhere 3 Wireless Mouse
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Mouse, Computer Mouse
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Both are accurate. </h4>
+            </div>
+    
+          </div>
+          <div class="number4 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -      </b>
+              <img class="img" src="mozartduck.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - President George Washington Rubber Duck
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Toy Shop
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+          <div class="number5 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -      </b>
+              <img class="img" src="pencil.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - Dixon No. 2 Pencils
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Quill, Quill Pen
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+          <div class="number6 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -      </b>
+              <img class="img" src="princessduck.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - Candy Princess Rubber Duck
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Teapot
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+          <div class="number7 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -      </b>
+              <img class="img" src="scissors.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - Fiskars Kids Hot Pink Scissors Tip
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Carpenter's Kit, Tool Kit
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+          <div class="number8 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -      </b>
+              <img class="img" src="vikingduck.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - Viking Rubber Duck
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Punching Bag, Punch Bag, Punching Ball, Punchball
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+          <div class="number9 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -      </b>
+              <img class="img" src="watch.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - Kids Versa Fitbit
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Vacuum, Vacuum Cleaner
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+          <div class="number10 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="test1">Test Image -      </b>
+              <img class="img" src="whiteduck.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - American Pekin Duck
+                <span> </span>
+              </h5>
+              <h5 class="answer col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model </b> - Bubble
+                <span> </span>
+              </h5>
+            <div class="results">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Google Lens is more accurate. </h4>
+            </div>
+          </div>
+        </ol>
+        <h6> In conclusion to the 10 test trials, it is accurate to say that Google Lens is more efficient than Mobile Net. 
+          Mobile Net kept giving weird and wrong answers, but Google Lens quickly produced a good and easy answer. 
+          This proves that Google Lens is a better source to use.</h6>
+      <p class="hi">Website Developed by - Drisana Biswas </p>
+  </center>
+  
+</body></html>
